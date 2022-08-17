@@ -1,0 +1,135 @@
+/*contact us*/
+
+.contact_container{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 100px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact_container .heading{
+    width: 60%;
+    padding-bottom: 30px;
+}
+
+.contact_container .heading h4{
+    font-size: 40px;
+    font-weight: bolder;
+    border-bottom: 4px solid cyan;
+}
+
+.contact_container .heading h4 span{
+    font-weight: 100;
+}
+
+
+.contact-body{
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+.contact-info{
+    margin: 32px 0;
+    text-align: center;
+    padding: 32px 0;
+}
+.contact-info span{
+    display: block;
+}
+.contact-info div{
+    margin: 12px 0;
+    padding: 14px;
+    border-left: 1px solid #0000ff;
+    border-right: 1px solid #0000ff;
+}
+.contact-info span .fa-solid{
+    font-size: 30px;
+    padding-bottom: 14px;
+    color:#000080;
+}
+.contact-info div span:nth-child(2){
+    font-weight: 500;
+    font-size: 0px;
+}
+.contact-info .text{
+    padding-top: 10px;
+}
+.contact-form{
+    padding: 20px 0;
+    border-top: 4px solid #747474;
+}
+.contact-form form{
+    padding-bottom: 16px;
+}
+
+.contact-form form h4{
+    font-size: 26px;
+    color: #ff9933;
+    text-shadow: #000080;
+    padding-bottom:15px;
+}
+
+.form-control{
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    padding: 12px;
+    margin: 10px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    outline: 0;
+}
+.form-control:focus{
+    box-shadow: 0 0 6px -4px rgba(48, 48, 48, 1);
+}
+.contact-form form div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+}
+.send-btn{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #138808;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 26px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.send-btn:hover{
+    margin-left: 6px;
+}
+.contact-form > div img{
+    width: 85%;
+}
+.contact-form > div{
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .contact-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 900px){
+    .contact-form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .contact-info{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
